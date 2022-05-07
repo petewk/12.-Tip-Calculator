@@ -1,0 +1,391 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan:hsl(183, 100%, 15%);
+  --Dark-grayish-cyan:hsl(186, 14%, 43%);
+  --Grayish-cyan:hsl(184, 14%, 56%);
+  --Light-grayish-cyan:hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan:hsl(189, 41%, 97%);
+  --White:hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  font-family: 'Space Mono', monospace;
+
+}
+
+@media only screen and (max-width: 375px){
+  #title {
+    margin: 4vh auto !important;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .mainBody {
+    height:
+  }
+
+  .billInput {
+    width: 100%;
+    padding: 20px;
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan)
+  }
+
+  h7 {
+    width: 100%;
+    padding: 20px;
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan)
+  }
+
+  .billInput > input {
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: right;
+  }
+
+  li, .customSpace, .custom {
+    width: 100% !important;
+    height: 45px !important;
+    margin-top: 8px !important;
+  }
+
+  #numpers {
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: right;
+  }
+
+  #results {
+    margin: 0 15px 15px 15px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    color: white;
+    height: 25vh;
+  }
+
+  .totalTitle {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    height: 100px
+  }
+
+  .resultFigure {
+    display:inline-block;
+    width: 50%;
+    float: right;
+    height: 100px;
+    margin-bottom: 0px;
+  }
+
+  #results > p, #results > div {
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+  }
+
+  .totalTitle > h7 {
+    padding: 0px;
+    color: var(--Light-grayish-cyan);
+  }
+
+}
+
+
+
+@media only screen and (min-width: 376px){
+  body {
+    padding-top: 10vh;
+  }
+
+
+  .mainBody {
+    width: 65vw;
+    margin: 12vh auto;
+    height: 45vh;
+    border-radius: 15px !important;
+    padding: 30px;
+  }
+
+  #results {
+    width: 50%;
+    display: inline-block;
+    float: right;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    height: 100%;
+    padding: 35px;
+  }
+
+  #calcForm {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+  }
+
+  input:not(#other-text) {
+    display: block;
+    width: 90%;
+  }
+
+  h7 {
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan);
+  }
+
+  .formradio {
+    width: 100% !important;
+  }
+
+  .formlabel {
+    padding-top: 0px !important;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  #reset {
+    width: 50% !important;
+    margin: 0 auto;
+    }
+
+  #people {
+    padding-left: 0px !important;
+  }
+
+  #bill:before, #people:before {
+      top: 34px !important;
+      left: 18px !important;
+  }
+
+  .totalTitle {
+    width: 50%;
+    float: left;
+  }
+
+  .resultFigure {
+    width: 50%;
+    float: right;
+    font-weight: 700;
+    text-align: right;
+    font-size: 1.4rem;
+  }
+
+
+  #results > br {
+    line-height: 3rem;
+    margin: 20px;
+  }
+
+  .resultContainer {
+    width: 100%;
+    display: block;
+    height: 40%;
+    margin-top: 7%;
+  }
+
+  .totalTitle {
+    color: var(--Light-grayish-cyan);
+    font-size: 1.1rem;
+  }
+
+  .totalTitle > h7 {
+    color: var(--Very-light-grayish-cyan);
+  }
+
+  li {
+    width: 90px;
+    height: 38px;
+    margin: 5px;
+  }
+
+  .col-lg-4 {
+    margin: 3px;
+    width: 30%;
+  }
+
+}
+
+
+
+
+#bill:before {
+  content: url('./images/icon-dollar.svg');
+  position: relative;
+    top: 43px;
+    left: 20px;
+}
+
+#people:before {
+  content: url('./images/icon-person.svg');
+  position: relative;
+    top: 43px;
+    left: 20px;
+}
+
+#people {
+  padding-left: 15px;
+}
+
+#title {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  color: var(--Very-dark-cyan);
+  letter-spacing: .5rem;
+}
+
+.mainBody {
+  background-color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.formradio {
+  width: 50px;
+  appearance: none;
+  border: 1px solid black;
+  height: 20px;
+  border-radius: 5px;
+  z-index: 100;
+  width: inherit;
+  height: inherit;
+  margin: 5px;
+}
+
+.formradio:checked {
+  background-color: var(--strong-cyan);
+  color: var(--Very-dark-cyan);
+  z-index: 89;
+}
+
+.formradio:checked + label {
+  background-color: var(--strong-cyan);
+  color: var(--Very-dark-cyan);
+  transition: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+input {
+  width: 100px;
+  height: 40px;
+}
+
+.billInput > input {
+  border: none;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+input:focus {
+  outline: 2px solid var(--strong-cyan) !important;
+  border-radius: 5px;
+}
+
+li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  list-style: none;
+}
+
+.formradio, .formlabel {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.formlabel {
+  z-index: 90;
+  width: inherit;
+  height: inherit;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 5px;
+  font-weight: 700;
+  color: white;
+  background-color: var(--Very-dark-cyan);
+  transition: 0.3s;
+  padding-top: 2px;
+}
+
+.customSpace > #other-text {
+  z-index: 91;
+  background-color: #ffffff00;
+  padding: 0px;
+    border-width: 0px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#other-amount {
+  margin: 5px;
+  opacity: 0;
+}
+
+.custom {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  background-color: var(--Very-light-grayish-cyan);
+}
+
+#reset {
+  text-align: center;
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.attribution {
+  position: fixed;
+  bottom: 0px;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 11px;
+}
+
+#results > div p {
+  padding: 25px 0 0 0;
+  color: var(--strong-cyan);
+  font-size: 1.8rem;
+}
