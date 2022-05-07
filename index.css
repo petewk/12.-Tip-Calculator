@@ -119,6 +119,7 @@ body {
     height: 45vh;
     border-radius: 15px !important;
     padding: 30px;
+    max-width: 1000px;
   }
 
   #results {
